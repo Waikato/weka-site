@@ -42,8 +42,9 @@
 							   
 							</p>
             						<a href="https://waikato.github.io/weka-wiki/downloading_weka/" class="button">Download and install</a>
+							<a href="https://waikato.github.io/weka-wiki/documentation" class="button scrolly">Docs</a>
 							<a href="./courses.html" class="button scrolly">Courses</a>
-					<a href="./book.html" class="button scrolly">Book</a>
+							<a href="./book.html" class="button scrolly">Book</a>
 						</div>
 					</div>
 				</div>
@@ -75,37 +76,37 @@
 			<div class="container">
 				<header>
 					<h2 name="learn" id ="learn" >Machine Learning without Programming</h2>
-					<p>Weka can be used to build machine learning pipelines, train classifiers, and run evaluations without having to write a single line of code.</p>
+					<p>Weka can be used to build machine learning pipelines, train classifiers, and run evaluations without having to write a single line of code:</p>
 						
 				</header>
 				<div class="row">
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
-							<a href="" class="image featured"><img src="https://waikato.github.io/weka-site/images/Explorer-1.png" alt=""/></a>
-							<h3><a href="">Open a Dataset</a></h3>
-							<p>First, we open the dataset that we would like to evaluate.</p>
+							<span class="image fit"><img src="https://waikato.github.io/weka-site/images/Explorer-1.png" alt=""/></span>
+							<h3>Open a dataset</h3>
+							<p>First, we open the <a href="https://waikato.github.io/weka-wiki/datasets/" target="_blank">dataset</a> that we would like to evaluate.</p>
 						</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
-							<a href="" class="image featured"><img src="https://waikato.github.io/weka-site/images/Explorer-2.png" alt=""/></a>
-							<h3><a href="">Choose a classifier</a></h3>
+							<span class="image fit"><img src="https://waikato.github.io/weka-site/images/Explorer-2.png" alt=""/></span>
+							<h3>Choose a classifier</h3>
 							<p> Second, we select a learning algorithm to use, e.g., the J48 classifier, which learns decision trees.</p>
 							</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
-							<a href="#" class="image featured"><img src="https://waikato.github.io/weka-site/images/Explorer-3.png" alt="" /></a>
-							<h3><a href="">Evaluate predictive accuracy</a></h3>
+							<span class="image fit"><img src="https://waikato.github.io/weka-site/images/Explorer-3.png" alt="" /></span>
+							<h3>Evaluate predictive accuracy</h3>
 							<p>Finally, we run a 10-fold cross-validation evaluation and obtain an estimate of predictive performance.</p>
 						</article>
 					</div>
 		
 				<footer>
-					<p>And programmers can easily implement this pipeline in Java:</p>
+					<p>Note that programmers can also easily implement this pipeline using Weka's Java API:</p>
 					<p>
 					<iframe
-					src="https://carbon.now.sh/embed/?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=seti&wt=sharp&l=text%2Fx-java&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fm=Hack&fs=18px&lh=139%25&si=false&es=4x&wm=false&code=DataSource%2520source%2520%253D%2520new%2520DataSource(%2522%252Fsome%252Fwhere%252Fdata.arff%2522)%253B%250AInstances%2520data%2520%253D%2520source.getDataSet()%253B%250A%250AJ48%2520tree%2520%253D%2520new%2520J48()%253B%2520%2520%2520%2520%2520%2520%2520%2520%2520%250Atree.buildClassifier(data)%253B%2520%2520%250A%2509%2509%2509%2509%2509%2509%2509%2520%2520%2520%250AEvaluation%2520eval%2520%253D%2520new%2520Evaluation(data)%253B%250Aeval.crossValidateModel(tree%252C%2520data%252C%252010%252C%2520new%2520Random(1))%253B"
+					src="https://carbon.now.sh/embed/?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=seti&wt=sharp&l=text%2Fx-java&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fm=Hack&fs=18px&lh=139%25&si=false&es=4x&wm=false&code=DataSource%2520source%2520%253D%2520new%2520DataSource(%2522%252Fsome%252Fwhere%252Fdata.arff%2522)%253B%250AInstances%2520data%2520%253D%2520source.getDataSet()%253B%250A%250AJ48%2520tree%2520%253D%2520new%2520J48()%253B%250AEvaluation%2520eval%2520%253D%2520new%2520Evaluation(data)%253B%250Aeval.crossValidateModel(tree%252C%2520data%252C%252010%252C%2520new%2520Random(1))%253B"
 					style="transform:scale(1.1); width:1024px; height:323px; border:0; overflow:hidden;"
 					sandbox="allow-scripts allow-same-origin">
 				  </iframe>
